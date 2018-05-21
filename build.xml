@@ -20,7 +20,7 @@
       </javac>
    </target>
   <target name="run">
-        <java jar="Project-Numbers.jar" fork="true"/>
+        <java jar="Project-Numbers.jar" classname="src.devops.numbers.NumberWords" fork="true"/>
     </target>
   <target name="test" depends="compile">
       <junit printsummary="yes" haltonfailure="yes">
