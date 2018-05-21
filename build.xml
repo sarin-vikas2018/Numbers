@@ -19,7 +19,10 @@
          <classpath refid="class.path"/>
       </javac>
    </target>
-   <target name="test" depends="compile">
+  <target name="run">
+        <java jar="Project-Numbers.jar" fork="true"/>
+    </target>
+  <target name="test" depends="compile">
       <junit printsummary="yes" haltonfailure="yes">
         <classpath refid="class.path"/>
         <classpath location="bin"/>
